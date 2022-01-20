@@ -77,7 +77,7 @@ Por que isso é importante?
 Imagine que você precisasse testar isso manualmente. Quanto tempo levaria do momento no qual você escolhe um inicial até o momento que chegasse no Level 30 apenas para verificar que o HP do seu pokémon é 411.61? A execução dos testes na minha máquina, que nem é muito potente, levou apenas 1 segundo!
 
 ## PokemonApiClient.dart
-[Essa](./lib/data/pokemon_api.client.dart) é a classe responsável por obter os dados da PokeApi. Ela possui apenas 1 método mas 2 possíveis saídas: 1 para o caminho feliz, onde tudo funciona e a api retorna o resultado esperado, e 1 para o caminho triste onde algo acontece e a api não retorna o valor esperado:
+[Essa](./lib/data/pokemon_api_client.dart) é a classe responsável por obter os dados da PokeApi. Ela possui apenas 1 método mas 2 possíveis saídas: 1 para o caminho feliz, onde tudo funciona e a api retorna o resultado esperado, e 1 para o caminho triste onde algo acontece e a api não retorna o valor esperado:
 ```
 Future<List<Pokemon>> getPokemon() async {
   List<Pokemon> pokemons = [];
