@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:unit_test_example/data/pokemon_client.dart';
+import 'package:unit_test_example/data/pokemon_api_client.dart';
 import 'package:unit_test_example/models/pokemon.dart';
+import 'package:http/http.dart' as http;
 
 void main() => runApp(const Home());
 
@@ -13,7 +14,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final PokemonClient client = PokemonClient();
+  final PokemonApiClient client = PokemonApiClient(client: http.Client());
   List<Pokemon> pokemons = [];
 
   @override
